@@ -1,0 +1,28 @@
+<ion-view view-title="myERBuddy">      
+    <ion-content data-tap-disabled="true">
+    	<!-- <div class="row"> -->
+    		<!-- <div class="col col-25 card"> -->
+    		<div id="map" data-tap-disabled="true" style="width: 90%"></div>
+    			<div class="item item-text-wrap" ng-repeat="(key, value) in hospitals" ng-click="selectHospital(value.address)">
+    				<h2>{{key}}</h2>
+    				<p>{{value.type}}</p>
+    				<p>Address: {{value.address}}</p>
+    				<p>Distance: {{value.distance}}</p>
+    				<p>Time to Destination: {{value.time}}</p>
+    				<p>Average Wait Time: {{value.waitTime}}</p>
+    				<p>Phone: {{value.phone}}</p>
+    				<p>Hours: {{value.hours}}</p>
+    				<button class="button button-positive" ng-click="goRegister()">
+					  Pre-Register
+					</button>
+
+				</div>
+				<button class="button button-assertive map-button" style="margin: 20px">Call 911</button>
+				<button class="button button-positive map-button" style="margin: 20px">Call Arro Cab</button>
+    		<!-- </div> -->
+    		<!-- <div class="col col-75" id="map" data-tap-disabled="true" style="height: 100vh">
+    		</div> -->
+    	<!-- </div>	 -->
+    	
+    </ion-content>
+</ion-view>

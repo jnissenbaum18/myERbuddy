@@ -1,0 +1,61 @@
+<ion-view view-title="myERBuddy">
+  <div class="bar bar-subheader">
+      <h1 class="title">
+        Select the nearest ER or urgent care facility for your emergency
+      </h1>
+  </div>
+  <ion-content class="padding has-subheader">
+
+    <div class="list card">
+      <div class="item item-divider positive">What is your condition?</div>
+      <div class="item item-body">
+
+        <div class="list">
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Condition
+          </div>
+          <select>
+            <option ng-repeat="condition in conditions" ng-click="log(condition)">{{condition}}</option>
+          </select>
+        </label>
+        </div>
+
+      </div>
+      </div>
+    <div class="list card">
+      <div class="item item-divider positive">What is your location?</div>
+      <div class="item item-body">
+
+        <div class="list">
+        <label class="item item-input item-stacked-label">
+          <input type="text" ng-model="location"> <span>(Change)</span>
+        </label>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider positive">What is your insurance plan?</div>
+      <div class="item item-body">
+
+        <div class="list">
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Insurance plan
+          </div>
+          <select>
+            <option ng-repeat="insurance in insuranceAgencies">{{insurance}}</option>
+          </select>
+        </label>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    <!-- <div id="map" data-tap-disabled="true"></div> -->
+    <button class="button" ng-click="goMap()">Submit</button>
+  </ion-content>
+</ion-view>
+

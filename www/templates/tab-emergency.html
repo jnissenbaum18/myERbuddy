@@ -1,0 +1,20 @@
+<ion-view view-title="myERBuddy">
+	<div class="bar bar-subheader">
+  		<button class="button button-assertive">Yes</button>
+  		<h1 class="title">
+  			Are you experiencing any of these emergencies?
+  		</h1>
+        <button class="button button-calm">No</button>
+	</div>
+ <ion-content class="padding has-subheader">
+   <div class="item item-divider energized"></div>
+    <div class="item item-body">
+    	<ul class="list">
+		    <li class="item" ng-repeat="symptom in symptoms">
+		      {{symptom}}
+		    </li>
+		</ul>
+    </div>
+   </div>
+ </ion-content>
+</ion-view>

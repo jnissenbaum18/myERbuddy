@@ -1,0 +1,25 @@
+<ion-view view-title="myERBuddy">    
+	<div class="bar bar-subheader">
+  		<h1 class="title">
+  			Contacts
+  		</h1>
+	</div>  
+    <ion-content data-tap-disabled="true" class="has-subheader">
+    	<div class="list">
+		  	<div class="item item-divider">
+		    	Emergency Contacts
+		  	</div>
+		  	<a class="item" href="#" ng-repeat="(key, value) in emergencyContacts">
+		    	<h5>{{key}}</h5><h4>{{value}}</h4>
+		  	</a>
+		</div>
+		<div class="list">
+		  	<div class="item item-divider">
+		    	Family and Friends
+		  	</div>
+		  	<a class="item" href="#" ng-repeat="(key, value) in familyAndFriendsContacts">
+		    	<h5>{{key}}</h5><h4>{{value}}</h4>
+		  	</a>
+		</div>
+    </ion-content>
+</ion-view>

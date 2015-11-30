@@ -1,0 +1,59 @@
+notes:
+
+screens:
+1. symptoms, see: zocdoc.com.
+	Yes: redirect to screen 2
+2. Map, zip, gps (default 2 miles), directions, see mockup screen 5
+	1. query gps
+		yes: autofill map
+		no: popup to input zip
+	2. calculate time to be seen: wait time to be seen + travel time
+	3. show map on part of the screen and options on another
+	4. Call 911 button
+3. Register see mock up 12
+	1. Have a prefilled form screen with junk data
+4. Contacts
+	1. Family
+	2. Employers
+
+Screens 3 and 4 by end of Friday 
+
+
+1. install Android SDK
+   Eclipse, go to Marketplace, install Android SDK Tools
+   SDK Manager
+   Devices Manager
+   this will install Android SDK into a home directory
+   find this in File > Preferences > Android
+   see home directory
+   Devices manager > create an emulator
+
+2. > ionic add (platform) android
+   > ionic build android
+   > ionic emulate android
+
+
+convert symptoms page 
+
+Core functionality:
+Maps direction
+
+10/11 To do
+
+Front:
+	What is your location instead of zip:
+		geolocate and autofill that information, else display ask for zip
+
+Maps:
+	Add directions under each selection
+
+
+Section 1 Take 2
+
+48k/year
+evaluation after 6 months for 10% increase to 52,800
+with healthcare benefits
+
+
+
+   
